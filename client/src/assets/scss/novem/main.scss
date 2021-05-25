@@ -1,0 +1,228 @@
+.comment {
+
+  .name {
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+  }
+
+  .date {
+    font-size: 10px;
+    display: inline-block;
+    right: 15px;
+    position: absolute;
+    top: 0
+  }
+
+  .video {
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+    top: 20px;
+    font-weight: 100;
+    text-overflow: ellipsis;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .comment-content {
+    margin-left: 46px
+  }
+
+
+}
+
+.thumbnail-display {
+  width : 100px;
+    img{
+      
+      border-radius : 10% !important ; 
+    }
+}
+
+.text-wrap {
+  white-space : pre-wrap !important
+}
+
+.text-center{
+  text-align: center !important;
+}
+
+.center:hover {
+  left: 50%;
+  transform: translate(-50%, -1px) !important;
+}
+
+.border-5 {
+  border-radius: 3% !important;
+}
+.overlay {
+  object-fit: cover;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.full-width { width:100%}
+
+.giveaway-form{
+  background-image: url('/assets/img/matin.jpg');
+  background-repeat:no-repeat;
+  background-size: contain;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+
+.play {
+  cursor: pointer;
+  background-image:url('/assets/img/play_white.png');
+  background-repeat:no-repeat;
+  width:20%;
+  height:20%;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+}
+.overlay:hover .play{
+  display: none;
+}
+
+
+.overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.avatar-xl {
+  width: 210px;
+	height: 210px;
+	font-size: $font-size-sm;
+}
+
+
+
+@media (min-width: 992px) {
+  .update-btn {
+    position:relative;
+    top:30px;
+  }
+}
+
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+.react-datepicker-wrapper{
+  width:100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  #title_book_appointment{
+    border-right: none ;
+  }
+
+  #title_book_appointment #title_p{
+    font-size: 300%;
+  }
+  
+  #avatar-col { 
+    display : none;
+  }
+
+  #info-col {
+    margin-left : 15px;
+  }
+  #header-title {
+    font-size : 190% !important
+  }
+  #user-nav {
+    margin-right : 20px !important
+  }
+  
+  #user-dropdown-menu{
+    transform: scale(2) !important;
+    margin-left: -150px !important ; 
+    margin-top: 180px !important; 
+  }
+
+  .appear-when-small {
+    display : inline-block !important
+  }
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+  #title_book_appointment{
+    border-right: 1px solid #333;
+  }
+
+  #title_book_appointment #title_p {
+    font-size: 600%
+  }
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+
+  #send_button{
+    margin-bottom : 20px;
+  }
+
+
+}
